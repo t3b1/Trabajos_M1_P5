@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(https://media.istockphoto.com/vectors/background-with-dog-paw-print-and-bone-vector-id1013286052?k=6&m=1013286052&s=170667a&w=0&h=dC67bf1eDGzY--dGHmZKGNEbkqJ2R66JVvEA6ITrg4g=);
+        }
+        .contenedor1{
+            padding: 3rem 4rem;
+            position: relative;
+        
+        }
+        .contenedor1 *{
+            margin: auto 3.5rem;
+        }
+        .framers{
+            float: left;
+        }
+        .fram{
+            border-top-left-radius: 3rem;
+            border-top-right-radius: 3rem;
+            border-bottom-left-radius: 3rem;
+            border-bottom-right-radius: 3rem;
+            border-bottom: 1rem solid #4CAF50;
+            border-top: 1rem solid #4CAF50;
+            background-color: rgba(0, 128, 0, 0.151);
+
+        }
+        #fra{
+            position: relative;
+            margin-top: 25%;
+        }
+
+        .container {
+            margin-left: 50%;
+            background-color: rgba(0, 128, 0, 0.151);
+            padding: 4rem;
+            min-height: 2rem;
+            width: 30%;
+            border-top-left-radius: 5rem;
+            border-top-right-radius: 5rem;
+            border-bottom-left-radius: 5rem;
+            border-bottom-right-radius: 5rem;
+            border-bottom: 1rem solid #4CAF50;
+            border-top: 1rem solid #4CAF50;
+            position: relative;
+
+        }
+
+        .container * {
+            margin: 0px auto;
+
+
+
+        }
+
+        .formulario *,
+        select {
+            width: 100%;
+            padding: 1rem 2rem;
+            margin: 0, 9rem 0;
+            display: inline-block;
+            border: 0, 3rem solid #ccc;
+            border-radius: 1rem;
+            box-sizing: border-box;
+        }
+
+        input[type=submit] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem 1rem;
+            margin: 2rem 0;
+            border: none;
+            border-radius: 1rem;
+            cursor: pointer;
+        }
+
+        #favcolor {
+            width: 20%;
+            height: 30%
+        }
+
+        h1,
+        p {
+            color: rgb(33, 68, 33);
+            text-align: center;
+            background-color: rgba(0, 128, 0, 0.151);
+            width: 30%;
+            margin: 0 auto;
+        }
+
+        .footer {
+            background-color: #4CAF50;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        IntaPest todo sobre tus mascotas en un solo lugar
+    </h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Nulla, repellat numquam quasi veritatis magnam magni. <br>
+        Distinctio quaerat totam qui incidunt commodi optio sed animi suscipit nulla,
+        autem voluptatem laudantium quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Minima, dolores quo. Modi deleniti, saepe quaerat iure earum repellat mollitia ea dignissimos 
+        sunt reiciendis quam nihil a! Facere obcaecati consequuntur ea.
+         Lorem ipsum dolor sit amet consectetur adipisicing elit.
+         Illo cumque temporibus, obcaecati esse ratione necessitatibus voluptas quasi soluta repellat ullam, 
+         illum doloremque modi numquam nostrum libero sit minima totam autem.</p>
+    <hr>
+    <div class="contenedor1">
+        <div class="framers">
+            <div class="fram">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/o0immv9uhtw" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+                      encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <br>
+            <br>
+            <div class="fram" id="fra">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14451254.43010731!2d-77.5256336951647!3d-
+                7.836283606352364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0a52c836bbbb%3A0xc0c679660f072759!2
+                sCuatro%20Patas!5e0!3m2!1ses-419!2sus!4v1653594071900!5m2!1ses-419!2sus" 
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+        <div class="container">
+    
+            <form class="formulario" method="post" action="">
+                <label for="nombremascota">Nombre de la mascota</label>
+                <input type="text" placeholder="cholito" required>
+                <label for="edadmascota">Edad de la mascota</label>
+                <input type="text" placeholder="5 años" required>
+                <label for="favcolor">Seleccione el color de su mascota</label>
+                <input type="color" id="favcolor" name="favcolor" value="#ff0000" requireds>
+                <label for="correo">Correo Electronico</label>
+                <input type="text" placeholder="coreo@correo.cl" required>
+                <label for="password">Contraseña</label>
+                <input type="password" placeholder="********" required>
+                <label >escriba su mensaje o consulta</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10">ecriba su mensaje o consulta</textarea>
+                <label>Acepto terminos y Condiciones</label>
+                <input type="checkbox" onclick="aceptar.disabled=!this.checked" required>
+            
+                <input type="Submit" value="Submit" name="aceptar">
+            </form>
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <p>acerca de nosotros</p> <br>
+        <p>IntaPest@company</p>
+    </footer>
+</body>
+
+</html>

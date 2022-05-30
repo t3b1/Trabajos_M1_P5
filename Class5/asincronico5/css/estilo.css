@@ -1,0 +1,18 @@
+body{
+    font-size: 40px;
+    font-family: 'Sail', cursive;
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+img{
+    width: 30%;
+    margin: 1,4%;
+    margin-left: 8%;
+}
+h1´{
+    text-align: center;
+}
